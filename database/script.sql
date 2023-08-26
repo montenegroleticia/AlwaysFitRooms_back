@@ -30,3 +30,9 @@ CREATE TABLE Session (
     email VARCHAR(255) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL
 );
+
+INSERT INTO Rooms (nome, capacidade, localizacao) VALUES
+  ('Sala 101', 10, 'Andar 1, Ala A'),
+  ('Sala 102', 8, 'Andar 1, Ala B'),
+  ('Sala 201', 12, 'Andar 2, Ala A'),
+  ('Sala 202', 6, 'Andar 2, Ala B');
