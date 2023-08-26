@@ -6,6 +6,8 @@ import { usersRouter } from "./routers/users-router";
 dotenv.config();
 const app = express();
 
+app.use(express.json());
+
 app.get("/health", (req: Request, res: Response) => {
   res.send("I'm alive");
 });

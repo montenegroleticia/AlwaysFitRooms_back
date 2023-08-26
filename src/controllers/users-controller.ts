@@ -3,7 +3,8 @@ import { Request, Response } from "express";
 import httpStatus from "http-status";
 
 export async function Register(req: Request, res: Response) {
-  const { nome, email, senha } = req.body;
+  const { nome, email, senha }: { nome: string; email: string; senha: string } =
+    req.body;
 
   try {
     const user = await userService.CreateUser(nome, email, senha);
