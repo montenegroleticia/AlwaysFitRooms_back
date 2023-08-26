@@ -1,7 +1,7 @@
 import { Router } from "express";
 import * as reservationsController from "../controllers/reservations-controller";
 import { validateSchemaMiddleware } from "../Middlewares/validate-middleware";
-import { ReservationSchema } from "../Schemas/index";
+import { ReservationSchema } from "../Schemas/reservations-schemas";
 
 const reservationsRouter = Router();
 

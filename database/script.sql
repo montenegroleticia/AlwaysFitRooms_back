@@ -24,3 +24,9 @@ CREATE TABLE Reservations (
     FOREIGN KEY (id_usuario) REFERENCES Users(id),
     FOREIGN KEY (id_sala) REFERENCES Rooms(id)
 );
+
+CREATE TABLE Session (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
